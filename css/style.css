@@ -1,317 +1,801 @@
-*{
-    box-sizing: border-box;
-    margin: 0;
-    
-    }
-    @font-face {
-        font-family: Poppins;
-        src: url(../assets/fonts/Poppins.ttf);
-    }
-
-    .nav{
-        display: flex;
-        align-items: center;
-    }
-    .nav ul{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-content: center;
-    }
-    .nav ul li {
-        margin: 0 10px;
-       
-
-    }
-.header {
-font-size: 12px;
-background: #757F9A;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #D7DDE8, #757F9A);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #D7DDE8, #757F9A); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-font-family: Poppins;
-
-
-}
-.nav ul li a:hover{
-    color: red;
-}
-main{
-
-
-    min-height: 100vh;
-}
-#footer{
-    background-color: #556897;
-    position: relative;
-   bottom: 0;
-   width: 100%;
- min-height: 80px;
+* {
+  padding: 0;
+  margin: 0;
 }
 
-.header h1 {
-    font-size: 30px;
+@font-face {
+  font-family: Poppins;
+  src: url(../assets/fonts/Poppins.ttf);
 }
-.header ul li a{
+.nav {
+  display: flex;
+  align-items: center;
+}
+
+.nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+}
+
+.nav ul li {
+  margin: 0 10px;
+}
+
+main {
+  min-height: 100vh;
+}
+
+#footer {
+  background-color: #606C5D;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  min-height: 80px;
+}
+
+@media (min-width: 768px) {
+  .productGrid {
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+    display: grid;
+  }
+  .section-2 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .section-2 p {
+    font-size: 20px;
+  }
+}
+@media (min-width: 1024px) {
+  .productGrid {
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+    display: grid;
+  }
+  .section-1 h2 {
+    font-size: 33px;
+  }
+  .columns {
+    grid-template-columns: repeat(2, 1fr);
+    display: grid;
+    margin-top: 60px;
+  }
+  .carousel {
+    grid-column: 2;
+    margin-left: 35px;
+    grid-row: 1;
+  }
+  .section-1 p {
+    font-size: 24px;
+  }
+  .section-2 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .pago-efectivo {
+    display: grid;
+    margin-top: 60px;
+  }
+  .titulo-pagoEfectivo {
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  }
+  .nav ul {
+    justify-content: space-around;
+  }
+  .header {
+    display: flex;
+    justify-content: space-between;
+  }
+  #id1 {
+    grid-column: 1/3;
+    grid-row: 1;
+  }
+  #id2 {
+    grid-column: 1/2;
+    grid-row: 2;
+    width: 100%;
+    object-fit: cover;
+  }
+  #id3 {
+    grid-column: 2/4;
+    grid-row: 2;
+  }
+  #id4 {
+    grid-column: 3/4;
+    grid-row: 3;
+    width: 100%;
+    object-fit: cover;
+  }
+  #id5 {
+    grid-column: 1/3;
+    grid-row: 3;
+  }
+  #id6 {
+    grid-column: 1/4;
+    grid-row: 4;
+    width: 100%;
+    object-fit: cover;
+  }
+  #id7 {
     color: white;
-    font-size: 12px;
-    text-align: right;
-    list-style: none;
+    text-shadow: black 5px 5px 10px;
+    height: 100%;
+    grid-column: 1/4;
+    grid-row: 4;
+    margin-top: 250px;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  #id8 {
+    grid-column: 1/3;
+    grid-row: 5;
+    width: 100%;
+    object-fit: cover;
+  }
+  #id9 {
+    grid-column: 3/4;
+    grid-row: 5;
+  }
 }
-
-.header li{
-    list-style: none;
-}
-.header li p{
-    list-style: none;
-    
-
-}
-
-
-.section-1{
-   color: white;
-   text-shadow: black 5px  5px 10px;
+.section-1 {
+  color: white;
+  text-shadow: black 5px 5px 10px;
   display: flex;
   align-items: center;
   flex-direction: column;
   justify-content: center;
-    background-image: url("../assets/images/depositphotos_309427772-stock-photo-worker-fumigating-plantation-of-lemon.jpg");
-   height: 300px;
+  background-image: url("../assets/images/depositphotos_309427772-stock-photo-worker-fumigating-plantation-of-lemon.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 300px;
+  width: 100%;
   padding: 0 55px;
-
 }
 
-
-
-.section-1 h2{
-    font-size: 24px;
-    text-align: center;
-      justify-content: center;
-        align-content: center;
+.section-1 h2 {
+  font-size: 24px;
+  text-align: center;
+  justify-content: center;
+  align-content: center;
 }
 
-.section-1 p{
-    text-align: center;
-    justify-content: center;
-        align-content: center;
-        font-size: 18px;
+.section-1 p {
+  text-align: center;
+  justify-content: center;
+  align-content: center;
+  font-size: 18px;
 }
-.section-2{
-background-color: brown;
 
-display: grid;
- 
+.section-2 {
+  background-color: #9ED2BE;
+  display: grid;
   grid-template-columns: 1fr;
   grid-gap: 10px;
   grid-auto-rows: minmax(100px, auto);
 }
 
-.section-2 p{
-font-size: 14px;
-
-
+.section-2 p {
+  font-size: 14px;
 }
-#id1{
-    grid-column: 1 / 3;
+
+#id1 {
+  grid-column: 0.3333333333;
+  grid-row: 1;
+}
+
+#id2 {
+  grid-column: 0.3333333333;
+  grid-row: 2;
+  width: 100%;
+  object-fit: cover;
+}
+
+#id3 {
+  grid-column: 0.3333333333;
+  grid-row: 3;
+}
+
+#id4 {
+  grid-column: 0.3333333333;
+  grid-row: 4;
+  width: 100%;
+  object-fit: cover;
+}
+
+#id5 {
+  grid-column: 0.3333333333;
+  grid-row: 5;
+}
+
+#id6 {
+  grid-column: 0.3333333333;
+  grid-row: 6;
+  width: 100%;
+  object-fit: cover;
+}
+
+#id7 {
+  grid-column: 0.3333333333;
+  grid-row: 7;
+}
+
+#id8 {
+  grid-column: 0.3333333333;
+  grid-row: 8;
+  width: 100%;
+  object-fit: cover;
+}
+
+#id9 {
+  grid-column: 0.3333333333;
+  grid-row: 9;
+}
+
+@media (min-width: 768px) {
+  .productGrid {
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+    display: grid;
+  }
+  .section-2 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .section-2 p {
+    font-size: 20px;
+  }
+}
+@media (min-width: 1024px) {
+  .productGrid {
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+    display: grid;
+  }
+  .section-1 h2 {
+    font-size: 33px;
+  }
+  .columns {
+    grid-template-columns: repeat(2, 1fr);
+    display: grid;
+    margin-top: 60px;
+  }
+  .carousel {
+    grid-column: 2;
+    margin-left: 35px;
     grid-row: 1;
-}
-#id2{
-    grid-column: 1 / 3;
+  }
+  .section-1 p {
+    font-size: 24px;
+  }
+  .section-2 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .pago-efectivo {
+    display: grid;
+    margin-top: 60px;
+  }
+  .titulo-pagoEfectivo {
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  }
+  .nav ul {
+    justify-content: space-around;
+  }
+  .header {
+    display: flex;
+    justify-content: space-between;
+  }
+  #id1 {
+    grid-column: 1/3;
+    grid-row: 1;
+  }
+  #id2 {
+    grid-column: 1/2;
     grid-row: 2;
     width: 100%;
-
-object-fit: cover;
-}
-#id3{
-    grid-column: 1 / 3;
+    object-fit: cover;
+  }
+  #id3 {
+    grid-column: 2/4;
+    grid-row: 2;
+  }
+  #id4 {
+    grid-column: 3/4;
     grid-row: 3;
-    
-}
-#id4{
-    grid-column: 1 / 3;
+    width: 100%;
+    object-fit: cover;
+  }
+  #id5 {
+    grid-column: 1/3;
+    grid-row: 3;
+  }
+  #id6 {
+    grid-column: 1/4;
     grid-row: 4;
     width: 100%;
-
-object-fit: cover;
-}
-#id5{
-    grid-column: 1 / 3;
+    object-fit: cover;
+  }
+  #id7 {
+    color: white;
+    text-shadow: black 5px 5px 10px;
+    height: 100%;
+    grid-column: 1/4;
+    grid-row: 4;
+    margin-top: 250px;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  #id8 {
+    grid-column: 1/3;
     grid-row: 5;
-}
-#id6{
-    grid-column: 1 / 3;
-    grid-row: 6;
     width: 100%;
-
-object-fit: cover;
+    object-fit: cover;
+  }
+  #id9 {
+    grid-column: 3/4;
+    grid-row: 5;
+  }
 }
-#id7{
-    grid-column: 1 / 3;
-    grid-row: 7;
-    
-}
-#id8{
-    grid-column: 1 / 3;
-    grid-row: 8;
-    width: 100%;
-
-object-fit: cover;
-}
-#id9{
-    grid-column: 1 / 3;
-    grid-row: 9;
-    
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
 }
 
-.productosSection{
-width: 100%;
-background-color: lightskyblue;
-padding: 20px 30px;
-text-align: center;
-margin-bottom: 20px;
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
 
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
 }
-.productosSection h1{
-    font-size: 20px;
-    
+
+input[type=submit]:hover {
+  background-color: #45a049;
 }
-.gridWrapper{
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+.col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+
+.col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+
+/* Clear floats after the columns */
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.carousel {
+  grid-column: 1;
+  margin-left: 35px;
+  grid-row: 2;
+}
+
+.img-container {
+  max-width: 800px;
+  max-height: 800px;
+}
+
+.img-carousel {
+  object-fit: cover;
+  width: 800px;
+  height: 720px;
+}
+
+.section-nosotros {
+  grid-column: 1;
+}
+
+.title-nosotros {
+  text-align: center;
+}
+
+.description-nosotros {
+  text-align: center;
+  margin: 0 20px;
+}
+
+.columns {
+  grid-template-columns: 1;
+  display: grid;
+  margin-top: 60px;
+}
+
+@media (max-width: 768px) {
+  .columns {
+    display: block;
+  }
+  .apart {
+    width: 100vw;
+  }
+  .carousel {
     display: flex;
     justify-content: center;
-
+    width: 100%;
+    margin: 0;
+  }
+  .img-carousel {
+    object-fit: cover;
+    width: 100%;
+    height: 250px;
+  }
 }
-.productGrid{
-    grid-template-columns: repeat(1, 1fr);
+@media (min-width: 1024px) {
+  .productGrid {
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+    display: grid;
+  }
+  .section-1 h2 {
+    font-size: 33px;
+  }
+  .columns {
+    grid-template-columns: repeat(2, 1fr);
+    display: grid;
+    margin-top: 60px;
+  }
+  .carousel {
+    grid-column: 2;
+    margin-left: 35px;
+    grid-row: 1;
+  }
+  .section-1 p {
+    font-size: 24px;
+  }
+  .section-2 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .pago-efectivo {
+    display: grid;
+    margin-top: 60px;
+  }
+  .titulo-pagoEfectivo {
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  }
+  .nav ul {
+    justify-content: space-around;
+  }
+  .header {
+    display: flex;
+    justify-content: space-between;
+  }
+  #id1 {
+    grid-column: 1/3;
+    grid-row: 1;
+  }
+  #id2 {
+    grid-column: 1/2;
+    grid-row: 2;
+    width: 100%;
+    object-fit: cover;
+  }
+  #id3 {
+    grid-column: 2/4;
+    grid-row: 2;
+  }
+  #id4 {
+    grid-column: 3/4;
+    grid-row: 3;
+    width: 100%;
+    object-fit: cover;
+  }
+  #id5 {
+    grid-column: 1/3;
+    grid-row: 3;
+  }
+  #id6 {
+    grid-column: 1/4;
+    grid-row: 4;
+    width: 100%;
+    object-fit: cover;
+  }
+  #id7 {
+    color: white;
+    text-shadow: black 5px 5px 10px;
+    height: 100%;
+    grid-column: 1/4;
+    grid-row: 4;
+    margin-top: 250px;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  #id8 {
+    grid-column: 1/3;
+    grid-row: 5;
+    width: 100%;
+    object-fit: cover;
+  }
+  #id9 {
+    grid-column: 3/4;
+    grid-row: 5;
+  }
+}
+.productosSection {
+  width: 100%;
+  background-color: #9ED2BE;
+  padding: 20px 30px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.productosSection h1 {
+  font-size: 20px;
+}
+
+.gridWrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.productGrid {
+  grid-template-columns: repeat(1, 1fr);
   grid-gap: 20px;
-display: grid;
+  display: grid;
 }
 
-.productCard{
-background-color: beige;
-
+.productCard {
+  background-color: beige;
 }
-.productDescripcion{
-    color: brown;
-    font-size: 15px;
-    text-align: center;
-    margin-top: 15px;
-    margin-bottom: 20px;
+
+.productDescripcion {
+  color: brown;
+  font-size: 15px;
+  text-align: center;
+  margin-top: 15px;
+  margin-bottom: 20px;
 }
 
 .imagenCard {
-    
-    width: 200px;
-    height: 200px;
-   margin: 0 auto;
-    overflow: hidden;
-  }
-  .imagenCard img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-     
-  }
+  width: 200px;
+  height: 200px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.imagenCard img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
 @media (min-width: 768px) {
-    .productGrid{
-        grid-template-columns: repeat(2, 1fr);
-      grid-gap: 20px;
+  .productGrid {
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
     display: grid;
-    }
-    .section-2{
-        grid-template-columns: repeat(2, 1fr);
-    
-    }
-    .section-2 p {
-        font-size: 20px;
-    }
+  }
+  .section-2 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .section-2 p {
+    font-size: 20px;
+  }
 }
-
 @media (min-width: 1024px) {
-    .productGrid{
-        grid-template-columns: repeat(4, 1fr);
-      grid-gap: 20px;
+  .productGrid {
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
     display: grid;
-    }
-
-    .section-1 h2{
-        font-size: 33px;
-         
-    }
-    
-    .section-1 p{
-        
-            font-size: 24px;
-    }
-    .section-2{
-        grid-template-columns: repeat(3, 1fr);
-    }
-
-    .nav ul{
-        justify-content: space-around;
-    }
-    .header{
-        display: flex;
-        justify-content: space-between;
-        
-    }
-
-
-    #id1{
-        grid-column: 1 / 3;
-        grid-row: 1;
-    }
-    #id2{
-        grid-column: 1 / 2;
-        grid-row: 2;
-        width: 100%;
-    
+  }
+  .section-1 h2 {
+    font-size: 33px;
+  }
+  .columns {
+    grid-template-columns: repeat(2, 1fr);
+    display: grid;
+    margin-top: 60px;
+  }
+  .carousel {
+    grid-column: 2;
+    margin-left: 35px;
+    grid-row: 1;
+  }
+  .section-1 p {
+    font-size: 24px;
+  }
+  .section-2 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .pago-efectivo {
+    display: grid;
+    margin-top: 60px;
+  }
+  .titulo-pagoEfectivo {
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  }
+  .nav ul {
+    justify-content: space-around;
+  }
+  .header {
+    display: flex;
+    justify-content: space-between;
+  }
+  #id1 {
+    grid-column: 1/3;
+    grid-row: 1;
+  }
+  #id2 {
+    grid-column: 1/2;
+    grid-row: 2;
+    width: 100%;
     object-fit: cover;
-    }
-    #id3{
-        grid-column: 2 / 4;
-        grid-row: 2;
-        
-    }
-    #id4{
-        grid-column: 3 / 4;
-        grid-row: 3;
-        width: 100%;
-    
+  }
+  #id3 {
+    grid-column: 2/4;
+    grid-row: 2;
+  }
+  #id4 {
+    grid-column: 3/4;
+    grid-row: 3;
+    width: 100%;
     object-fit: cover;
-    }
-    #id5{
-        grid-column: 1 / 3;
-        grid-row: 3;
-    }
-    #id6{
-        grid-column: 1 / 4;
-        grid-row: 4;
-        width: 100%;
-     
+  }
+  #id5 {
+    grid-column: 1/3;
+    grid-row: 3;
+  }
+  #id6 {
+    grid-column: 1/4;
+    grid-row: 4;
+    width: 100%;
     object-fit: cover;
-    }
-    #id7{
-        color: white;
-        text-shadow: black 5px 5px 10px;
-        height: 100%;
-        grid-column: 1 / 4;
-        grid-row: 4;
-        margin-top: 250px;
-        position: relative;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-    }
-    #id8{
-        grid-column: 1 / 3;
-        grid-row: 5;
-        width: 100%;
-    
+  }
+  #id7 {
+    color: white;
+    text-shadow: black 5px 5px 10px;
+    height: 100%;
+    grid-column: 1/4;
+    grid-row: 4;
+    margin-top: 250px;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  #id8 {
+    grid-column: 1/3;
+    grid-row: 5;
+    width: 100%;
     object-fit: cover;
-    }
-    #id9{
-        grid-column: 3 / 4;
-        grid-row: 5;
-        
-    }
+  }
+  #id9 {
+    grid-column: 3/4;
+    grid-row: 5;
+  }
 }
+@media (min-width: 768px) {
+  .productGrid {
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+    display: grid;
+  }
+  .section-2 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .section-2 p {
+    font-size: 20px;
+  }
+}
+@media (min-width: 1024px) {
+  .productGrid {
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+    display: grid;
+  }
+  .section-1 h2 {
+    font-size: 33px;
+  }
+  .columns {
+    grid-template-columns: repeat(2, 1fr);
+    display: grid;
+    margin-top: 60px;
+  }
+  .carousel {
+    grid-column: 2;
+    margin-left: 35px;
+    grid-row: 1;
+  }
+  .section-1 p {
+    font-size: 24px;
+  }
+  .section-2 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .pago-efectivo {
+    display: grid;
+    margin-top: 60px;
+  }
+  .titulo-pagoEfectivo {
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  }
+  .nav ul {
+    justify-content: space-around;
+  }
+  .header {
+    display: flex;
+    justify-content: space-between;
+  }
+  #id1 {
+    grid-column: 1/3;
+    grid-row: 1;
+  }
+  #id2 {
+    grid-column: 1/2;
+    grid-row: 2;
+    width: 100%;
+    object-fit: cover;
+  }
+  #id3 {
+    grid-column: 2/4;
+    grid-row: 2;
+  }
+  #id4 {
+    grid-column: 3/4;
+    grid-row: 3;
+    width: 100%;
+    object-fit: cover;
+  }
+  #id5 {
+    grid-column: 1/3;
+    grid-row: 3;
+  }
+  #id6 {
+    grid-column: 1/4;
+    grid-row: 4;
+    width: 100%;
+    object-fit: cover;
+  }
+  #id7 {
+    color: white;
+    text-shadow: black 5px 5px 10px;
+    height: 100%;
+    grid-column: 1/4;
+    grid-row: 4;
+    margin-top: 250px;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  #id8 {
+    grid-column: 1/3;
+    grid-row: 5;
+    width: 100%;
+    object-fit: cover;
+  }
+  #id9 {
+    grid-column: 3/4;
+    grid-row: 5;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
